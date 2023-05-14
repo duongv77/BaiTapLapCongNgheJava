@@ -19,11 +19,11 @@ public class PersonalityTest {
         color = color.toLowerCase();
         return switch (color) {
             case "xanh" -> "Hòa đồng, tự nhiên";
-            case "đỏ" -> "Năng động, quyết đoán";
-            case "tím" -> "Sáng tạo, tinh tế, mộng mơ";
-            case "vàng" -> "Vui vẻ, nhiệt huyết";
-            case "hồng" -> "Dịu dàng, lãng mạn";
-            case "trắng" -> "Thanh lịch, tinh khôi";
+            case "đỏ", "do" -> "Năng động, quyết đoán";
+            case "tím", "tim" -> "Sáng tạo, tinh tế, mộng mơ";
+            case "vàng", "vang" -> "Vui vẻ, nhiệt huyết";
+            case "hồng", "hong" -> "Dịu dàng, lãng mạn";
+            case "trắng", "trang" -> "Thanh lịch, tinh khôi";
             default -> null;
         };
     }

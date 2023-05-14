@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.nio.charset.StandardCharsets;
+import java.text.NumberFormat;
 import java.util.Arrays;
 import java.util.List;
 
@@ -90,5 +91,10 @@ public class Helper {
             parseException.printStackTrace();
             return null;
         }
+    }
+
+    public static String formatNumber(Object number){
+        NumberFormat formatter = NumberFormat.getInstance();
+        return formatter.format(number);
     }
 }

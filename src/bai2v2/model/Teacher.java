@@ -41,10 +41,7 @@ public class Teacher extends Person {
     }
 
     public String thuNhap() {
-        int luong = luongCoBan + phuCap;
-        NumberFormat formatter = NumberFormat.getInstance();
-        String formattedNumber = formatter.format(luong);
-        return String.format("%s VNĐ", formattedNumber);
+        return String.format("%s VNĐ", formatNumber( luongCoBan + phuCap));
     }
 
     public Double getGioDay() {
