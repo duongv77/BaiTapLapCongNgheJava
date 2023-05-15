@@ -6,10 +6,6 @@ public class NumberOfDays {
     public static void main(String[] args) {
 
         Integer month = IMPORT_INT("Nhập tháng (1-12): ", 12, 1);
-        if (month > 12 || month < 1) {
-            printLog("Tháng không hợp lệ!");
-            return;
-        }
         Integer year = IMPORT_INT("Nhập vào năm: ", null, 0);
         Integer numberOfDays = getNumberOfDays(month, year);
         printLog(String.format("So ngày của tháng %d năm %d là: %s", month, year, numberOfDays));
